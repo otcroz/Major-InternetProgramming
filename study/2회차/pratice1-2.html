@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Document</title>
+    <link href="./bootstrap4/css/bootstrap.min.css" rel="stylesheet" type="text/css"><!--css에 대한 부트스트랩 적용-->
+</head>
+<body>
+<div class="container">
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+        <a class="navbar-brand" href="#">Exercise</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="./pratice1-1.html">pratice1-1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pratice1-2.html">pratice1-2</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <!--Button trigger modal-->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+                    Log In
+                  </button>
+              </li>
+          </ul>
+        </div>
+    </nav>
+
+    <!--Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Log In</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"> 
+                <div class="container">
+                    <div class="row">
+                        <button type="button" class="btn btn-outline-secondary btn-block btn-sm" data-dismiss="modal">Login with Google</button> <!--btn-block btm-sm: 블럭의 크기가 알맞게 조정-->
+                        <button type="button" class="btn btn-outline-secondary btn-block btn-sm" data-dismiss="modal">Login with E-Mail</button>
+                    </div>
+                </div>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+    <div class="row">
+        <!--side layout-->
+        <div class="col-lg-4"> <!--창이 작은 상태에서는 레이아웃 구현이 안됨-->
+            <!-- Search widget-->
+            <div class="card mb-4">
+                <div class="card-header">Search</div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                        <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Categories widget-->
+            <div class="card mb-4">
+                <div class="card-header">Categories</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">DSWU</a></li>
+                                <li><a href="#!">20200818</a></li>
+                                <li><a href="#!">Computer Engineering</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">Django</a></li>
+                                <li><a href="#!">Bootstrap</a></li>
+                                <li><a href="#!">Web</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--main layout-->
+        <div class="col-lg-8">
+            <!--Collapse-->
+            <p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--사진-->
+            <div class="my-2">
+                <div class="row">
+                    <div class="col-6 bg-dark"><img src="https://i.pinimg.com/474x/27/de/1f/27de1fbde83fb1441b19c2ec4743a76d.jpg" width="300px"></div>
+                    <div class="col-6 bg-info"><img src="http://file.instiz.net/data/file/20130227/7/9/5/7951a99e6cebb9ac8f9a8e1fe416ff4f" width="300px"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 bg-primary"><img src="https://i.pinimg.com/474x/27/de/1f/27de1fbde83fb1441b19c2ec4743a76d.jpg" width="200px"></div>
+                    <div class="col-4 bg-secondary"><img src="http://file.instiz.net/data/file/20130227/7/9/5/7951a99e6cebb9ac8f9a8e1fe416ff4f" width="200px"></div>
+                    <div class="col-4 bg-warning"><img src="https://i.pinimg.com/474x/27/de/1f/27de1fbde83fb1441b19c2ec4743a76d.jpg" width="200px"></div>
+                </div>
+
+            </div>
+            <!--Pagenation-->
+            <nav aria-label="...">
+                <ul class="pagination justify-content-center my-4">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--색상 바--> <!--primary, secondary, success, danger, warning, info, light, dark-->
+            <div class="alert alert-primary" role="alert">primary</div>
+            <div class="alert alert-secondary" role="alert">secondary</div>
+            <div class="alert alert-success" role="alert">success</div>
+            <div class="alert alert-danger" role="alert">danger</div>
+            <div class="alert alert-warning" role="alert">warning</div>
+            <div class="alert alert-info" role="alert">info</div>
+            <div class="alert alert-light" role="alert">light</div>
+            <div class="alert alert-dark" role="alert">dark</div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Sooyeon Yoo 2021</p></div>
+    </footer>
+</div>
+
+    <!--js에 대한 부트스트랩 적용-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
