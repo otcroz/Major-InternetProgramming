@@ -3,6 +3,7 @@
 <head>
     <title>Document</title>
     <link href="./bootstrap4/css/bootstrap.min.css" rel="stylesheet" type="text/css"><!--css에 대한 부트스트랩 적용-->
+    <script src="https://kit.fontawesome.com/c0877d7688.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -26,7 +27,7 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#loginModal">
                     Go To
                 </button>
             </ul>
@@ -44,15 +45,17 @@
                     </div>
                     <div class="modal-body">
                         <div class="row">
-                            <button type="button" class="btn btn-outline-dark btn-block btn-sm m-1">Go to GitHub</button>
-                            <button type="button" class="btn btn-outline-dark btn-block btn-sm">Go to Naver</button>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fab fa-github"></i>&nbsp;Go to GitHub</button>
+                                <button type="button" class="btn btn-outline-success btn-block btn-sm">Go to Naver</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-danger btn-block btn-sm"><i class="far fa-envelope-open"></i>&nbsp;Go to E-Mail</button>
+                            </div>
                         </div>
-                        <div class="row">
-                            <button type="button" class="btn-outline-dark btn-block btn-sm">Go to E-Mail</button>
-                        </div>
-                        <div class="modal-footer">
+                    </div>
+                    <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -94,49 +97,50 @@
                 <!--프로필-->
                 <h3>프로필</h3>
                 <div class="row mb-3">
-                    <div class="col-4">
+                    <div class="col-lg-6">
                         <img src="http://images4.fanpop.com/image/polls/806000/806490_1313464677446_full.png?v=1313464723" width="300px">
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-6">
                         <ul>
                             <li>덕성여자대학교 재학 중</li>
                             <li>컴퓨터공학과</li>
-                            <li>서울 거주</li>
+                            <li>서울시 동작구 거주</li>
+                            <li>아직 진로를 고민 중인 2학년..</li>
                         </ul>
                     </div>
                 </div>
                 <!--스택-->
                 <h3>스택</h3>
                 <div class="mb-3">
-                    <button type="button">Python</button>
-                    <button type="button">C++</button>
-                    <button type="button">JAVA</button>
-                    <button type="button">C</button>
+                    <button type="button" class="btn-warning"><i class="fab fa-python"></i>&nbsp;Python</button>
+                    <button type="button" class="btn-dark"><i class="fab fa-contao"></i>&nbsp;C++</button>
+                    <button type="button" class="btn-success"><i class="fab fa-java"></i>&nbsp;JAVA</button>
+                    <button type="button" class="btn-primary"><i class="fab fa-cuttlefish"></i>&nbsp;C</button>
                 </div>
                 
             </div>
             <div class="col-4"> <!--side layout-->
                 <!-- Search widget-->
                 <div class="card mb-4">
-                    <div class="card-header">Search</div>
+                    <div class="card-header"><i class="fas fa-search"></i>&nbsp;Search</div>
                     <div class="card-body">
                         <div class="input-group">
-                            <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
-                            <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                            <input class="form-control" type="text" placeholder="검색..." aria-label="Enter search term..." aria-describedby="button-search" />
+                            <button class="btn btn-primary" id="button-search" type="button">Go!<i class="far fa-hand-point-up"></i></button>
                         </div>
                     </div>
                 </div>
                 <div>
                     <ul>
-                        <li><a href="#">덕성여대 홈페이지 바로가기</a></li>
-                        <li><a href="#">Google 바로가기</a></li>
+                        <li><a href="https://www.duksung.ac.kr/">덕성여대 홈페이지 바로가기</a></li>
+                        <li><a href="https://www.google.co.kr/">Google 바로가기</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer-->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-info">
         <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Sooyeon Yoo 2021</p></div>
     </footer>
 

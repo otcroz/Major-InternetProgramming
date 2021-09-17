@@ -3,6 +3,7 @@
 <head>
     <title>Document</title>
     <link href="./bootstrap4/css/bootstrap.min.css" rel="stylesheet" type="text/css"><!--css에 대한 부트스트랩 적용-->
+    <script src="https://kit.fontawesome.com/c0877d7688.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container">
@@ -45,8 +46,8 @@
             <div class="modal-body"> 
                 <div class="container">
                     <div class="row">
-                        <button type="button" class="btn btn-outline-secondary btn-block btn-sm" data-dismiss="modal">Login with Google</button> <!--btn-block btm-sm: 블럭의 크기가 알맞게 조정-->
-                        <button type="button" class="btn btn-outline-secondary btn-block btn-sm" data-dismiss="modal">Login with E-Mail</button>
+                        <button type="button" class="btn btn-outline-danger btn-block btn-sm" data-dismiss="modal"><i class="fab fa-google"></i>&nbsp;Login with Google</button> <!--btn-block btm-sm: 블럭의 크기가 알맞게 조정-->
+                        <button type="button" class="btn btn-outline-danger btn-block btn-sm" data-dismiss="modal"><i class="far fa-envelope-open"></i>&nbsp;Login with E-Mail</button>
                     </div>
                 </div>
             </div>
@@ -63,7 +64,7 @@
         <div class="col-lg-4"> <!--창이 작은 상태에서는 레이아웃 구현이 안됨-->
             <!-- Search widget-->
             <div class="card mb-4">
-                <div class="card-header">Search</div>
+                <div class="card-header"><i class="fas fa-search"></i>&nbsp;Search</div>
                 <div class="card-body">
                     <div class="input-group">
                         <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
@@ -98,21 +99,21 @@
         <div class="col-lg-8">
             <!--Collapse-->
             <p>
-                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+                <a class="btn btn-success" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">안녕하세요!</a>
+                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">반가워요!</button>
             </p>
             <div class="row">
                 <div class="col">
                     <div class="collapse multi-collapse" id="multiCollapseExample1">
                         <div class="card card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            안녕하세요! 만나서 반가워요!
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="collapse multi-collapse" id="multiCollapseExample2">
                         <div class="card card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            저의 이름은 유수연이에요!
                         </div>
                     </div>
                 </div>
@@ -131,21 +132,19 @@
 
             </div>
             <!--Pagenation-->
-            <nav aria-label="...">
-                <ul class="pagination justify-content-center my-4">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item active" aria-current="page">
-                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
-                </ul>
-            </nav>
+            <ul class="pagination justify-content-center my-4">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
             <!--색상 바--> <!--primary, secondary, success, danger, warning, info, light, dark-->
             <div class="alert alert-primary" role="alert">primary</div>
             <div class="alert alert-secondary" role="alert">secondary</div>
@@ -158,12 +157,11 @@
         </div>
     </div>
     </div>
-
+</div>
     <!-- Footer-->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-primary">
         <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Sooyeon Yoo 2021</p></div>
     </footer>
-</div>
 
     <!--js에 대한 부트스트랩 적용-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
