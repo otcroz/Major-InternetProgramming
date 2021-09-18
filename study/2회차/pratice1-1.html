@@ -4,7 +4,7 @@
     <title>Document</title>
     <link href="./bootstrap4/css/bootstrap.min.css" rel="stylesheet" type="text/css"><!--css에 대한 부트스트랩 적용-->
     <script src="https://kit.fontawesome.com/c0877d7688.js" crossorigin="anonymous"></script> <!--awesomefont 적용-->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--chart.js 적용-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> <!--chart.js 적용-->
 </head>
 <body>
 <div class="container">
@@ -88,129 +88,133 @@
     </div>
 
     <!--Dashboard-->
-    <div class="my-3"> <!--Dashbaord와 Card를 묶어주고 margin값을 줌-->
-        <h3>대시보드</h3>
-        <!--Table-->
-        <div class="mb-3 table-responsive">
-            <table class="table table-striped table-bordered table-hover">
-                <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">C++</th>
-                    <th scope="col">JAVA</th>
-                    <th scope="col">PYTHON</th>
-                    <th scope="col">C</th>
-                    <th scope="col">HTML</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">가나다</th>
-                    <td>O</td>
-                    <td>X</td>
-                    <td>O</td>
-                    <td>O</td>
-                    <td>X</td>
-                </tr>
-                <tr>
-                    <th scope="row">일이삼</th>
-                    <td>X</td>
-                    <td>O</td>
-                    <td>O</td>
-                    <td>O</td>
-                    <td>O</td>
-                </tr>
-                <tr>
-                    <th scope="row">하나둘</th>
-                    <td>O</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>O</td>
-                    <td>O</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-        <!--Chart-->
-        <div class="row mb-3">
-            <div class="col-lg-6">
-                <div class="card">
-                    <div class="card-body">
-                        <canvas id="chart1"></canvas>
-                    </div>
-                    <div class="card-footer">
-                        바 차트(Bar chart)
+    <div class="container">
+        <div class="my-3"> <!--Dashbaord와 Card를 묶어주고 margin값을 줌-->
+            <h3>대시보드</h3>
+            <!--Table-->
+            <div class="mb-3 table-responsive">
+                <table class="table table-striped table-bordered table-hover text-center"> <!--text-center 속성-->
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">C++</th>
+                        <th scope="col">JAVA</th>
+                        <th scope="col">PYTHON</th>
+                        <th scope="col">C</th>
+                        <th scope="col">HTML</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">가나다</th>
+                        <td>O</td>
+                        <td>X</td>
+                        <td>O</td>
+                        <td>O</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">일이삼</th>
+                        <td>X</td>
+                        <td>O</td>
+                        <td>O</td>
+                        <td>O</td>
+                        <td>O</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">하나둘</th>
+                        <td>O</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>O</td>
+                        <td>O</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--Chart-->
+                <div class="container">
+                    <div class="row my-2">
+                        <div class="col-lg-6">
+                            <div class="card"> <!--card를 이용하여 차트 배치-->
+                                <div class="card-body">
+                                    <canvas id="myChart1"></canvas>
+                                </div>
+                                <div class="card-footer">
+                                    <h3>Bar Chart</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <canvas id="myChart2"></canvas>
+                                </div>
+                                <div class="card-footer">
+                                    <h3>Doughnut Chart</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card">
-                    <div class="card-body">
-                        <canvas id="chart2"></canvas>
-                    </div>
-                    <div class="card-footer">
-                        도넛 차트(Doughnut chart)
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            data = {
-                    labels: ['C++', 'JAVA', 'Python', 'C', 'html'],
-                    datasets: [{
-                        label: '언어 수강자 수',
-                        data: [10, 5, 13, 8, 17],
-                        backgroundColor: [
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                        ],
-                        borderColor: [
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 99, 132, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                        ],
-                        borderWidth: 1
-                    }]
-                };
+            <script>
+                data = {
+                        labels: ['C++', 'JAVA', 'Python', 'C', 'html'],
+                        datasets: [{
+                            label: '언어 수강자 수',
+                            data: [10, 5, 13, 8, 17],
+                            backgroundColor: [
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(153, 102, 255, 0.2)',
+                            ],
+                            borderColor: [
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                            ],
+                            borderWidth: 1
+                        }]
+                    };
 
-            //bar타입의 차트
-            var ct1 = document.getElementById('chart1');
-            var myChart1 = new Chart(ct1, {
-                type: 'bar',
-                data: data,
-                options: {scales: {y: {beginAtZero: true}}}
-            });
+                //bar타입의 차트
+                var ct1 = document.getElementById('myChart1');
+                var myChart1 = new Chart(ct1, {
+                    type: 'bar',
+                    data: data,
+                    options: {scales: {y: {beginAtZero: true}}}
+                });
 
-            //doughnut타입의 차트
-            var ct2 = document.getElementById('chart2');
-            var mychart2 = new Chart(ct2, {
-                type: 'doughnut',
-                data: data,
-                //options: {scales: {y: {beginAtZero: true}}}
-            });
-        </script>
-    <!--Card-->
-        <h3>카드</h3>
-        <div class="row"> <!--교수님이 row를 중첩하면 카드 2개를 한 줄에 같이 둘 수 있다고 함 + 카드의 비율 유지--> 
-            <div class="card col-sm-6" style="width: 18rem;">
-                <img src="https://i.pinimg.com/originals/5b/22/a7/5b22a7ba2edc67205e88851d2da79fac.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                //doughnut타입의 차트
+                var ct2 = document.getElementById('myChart2');
+                var mychart2 = new Chart(ct2, {
+                    type: 'doughnut',
+                    data: data,
+                    options: {scales: {y: {beginAtZero: true}}}
+                });
+            </script>
+            <!--Card-->
+            <h3>카드</h3>
+            <div class="row"> <!--교수님이 row를 중첩하면 카드 2개를 한 줄에 같이 둘 수 있다고 함 + 카드의 비율 유지--> 
+                <div class="col-lg-6">
+                    <img src="https://i.pinimg.com/originals/5b/22/a7/5b22a7ba2edc67205e88851d2da79fac.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card col-sm-6" style="width: 18rem;">
-                <img src="https://i.pinimg.com/originals/5b/22/a7/5b22a7ba2edc67205e88851d2da79fac.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="col-lg-6">
+                    <img src="https://i.pinimg.com/originals/5b/22/a7/5b22a7ba2edc67205e88851d2da79fac.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -59,103 +59,103 @@
     </div>
     
     <div class="container">
-    <div class="row">
-        <!--side layout-->
-        <div class="col-lg-4"> <!--창이 작은 상태에서는 레이아웃 구현이 안됨-->
-            <!-- Search widget-->
-            <div class="card mb-4">
-                <div class="card-header"><i class="fas fa-search"></i>&nbsp;Search</div>
-                <div class="card-body">
-                    <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
-                        <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+        <div class="row">
+            <!--side layout-->
+            <div class="col-lg-4">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header"><i class="fas fa-search"></i>&nbsp;Search</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                            <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Categories</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">DSWU</a></li>
+                                    <li><a href="#!">20200818</a></li>
+                                    <li><a href="#!">Computer Engineering</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">Django</a></li>
+                                    <li><a href="#!">Bootstrap</a></li>
+                                    <li><a href="#!">Web</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Categories widget-->
-            <div class="card mb-4">
-                <div class="card-header">Categories</div>
-                <div class="card-body">
+            <!--main layout-->
+            <div class="col-lg-8">
+                <!--Collapse-->
+                <p>
+                    <a class="btn btn-success" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">안녕하세요!</a>
+                    <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">반가워요!</button>
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                                안녕하세요! 만나서 반가워요!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="card card-body">
+                                저의 이름은 유수연이에요!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--사진-->
+                <div class="my-2 justify-content-center">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <ul class="list-unstyled mb-0">
-                                <li><a href="#!">DSWU</a></li>
-                                <li><a href="#!">20200818</a></li>
-                                <li><a href="#!">Computer Engineering</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6">
-                            <ul class="list-unstyled mb-0">
-                                <li><a href="#!">Django</a></li>
-                                <li><a href="#!">Bootstrap</a></li>
-                                <li><a href="#!">Web</a></li>
-                            </ul>
-                        </div>
+                        <div class="col-6 bg-dark"><img src="https://i.pinimg.com/474x/27/de/1f/27de1fbde83fb1441b19c2ec4743a76d.jpg" class="img-fluid"></div>
+                        <div class="col-6 bg-info"><img src="http://file.instiz.net/data/file/20130227/7/9/5/7951a99e6cebb9ac8f9a8e1fe416ff4f" class="img-fluid"></div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!--main layout-->
-        <div class="col-lg-8">
-            <!--Collapse-->
-            <p>
-                <a class="btn btn-success" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">안녕하세요!</a>
-                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">반가워요!</button>
-            </p>
-            <div class="row">
-                <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample1">
-                        <div class="card card-body">
-                            안녕하세요! 만나서 반가워요!
-                        </div>
+                    <div class="row">
+                        <div class="col-4 bg-primary"><img src="https://i.pinimg.com/474x/27/de/1f/27de1fbde83fb1441b19c2ec4743a76d.jpg" class="img-fluid"></div>
+                        <div class="col-4 bg-secondary"><img src="http://file.instiz.net/data/file/20130227/7/9/5/7951a99e6cebb9ac8f9a8e1fe416ff4f" class="img-fluid"></div>
+                        <div class="col-4 bg-warning"><img src="https://i.pinimg.com/474x/27/de/1f/27de1fbde83fb1441b19c2ec4743a76d.jpg" class="img-fluid"></div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample2">
-                        <div class="card card-body">
-                            저의 이름은 유수연이에요!
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--사진-->
-            <div class="my-2">
-                <div class="row">
-                    <div class="col-6 bg-dark"><img src="https://i.pinimg.com/474x/27/de/1f/27de1fbde83fb1441b19c2ec4743a76d.jpg" width="300px"></div>
-                    <div class="col-6 bg-info"><img src="http://file.instiz.net/data/file/20130227/7/9/5/7951a99e6cebb9ac8f9a8e1fe416ff4f" width="300px"></div>
-                </div>
-                <div class="row">
-                    <div class="col-4 bg-primary"><img src="https://i.pinimg.com/474x/27/de/1f/27de1fbde83fb1441b19c2ec4743a76d.jpg" width="200px"></div>
-                    <div class="col-4 bg-secondary"><img src="http://file.instiz.net/data/file/20130227/7/9/5/7951a99e6cebb9ac8f9a8e1fe416ff4f" width="200px"></div>
-                    <div class="col-4 bg-warning"><img src="https://i.pinimg.com/474x/27/de/1f/27de1fbde83fb1441b19c2ec4743a76d.jpg" width="200px"></div>
-                </div>
 
+                </div>
+                <!--Pagenation-->
+                <ul class="pagination justify-content-center my-4">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+                <!--색상 바--> <!--primary, secondary, success, danger, warning, info, light, dark-->
+                <div class="alert alert-primary" role="alert">primary</div>
+                <div class="alert alert-secondary" role="alert">secondary</div>
+                <div class="alert alert-success" role="alert">success</div>
+                <div class="alert alert-danger" role="alert">danger</div>
+                <div class="alert alert-warning" role="alert">warning</div>
+                <div class="alert alert-info" role="alert">info</div>
+                <div class="alert alert-light" role="alert">light</div>
+                <div class="alert alert-dark" role="alert">dark</div>
             </div>
-            <!--Pagenation-->
-            <ul class="pagination justify-content-center my-4">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                </li>
-            </ul>
-            <!--색상 바--> <!--primary, secondary, success, danger, warning, info, light, dark-->
-            <div class="alert alert-primary" role="alert">primary</div>
-            <div class="alert alert-secondary" role="alert">secondary</div>
-            <div class="alert alert-success" role="alert">success</div>
-            <div class="alert alert-danger" role="alert">danger</div>
-            <div class="alert alert-warning" role="alert">warning</div>
-            <div class="alert alert-info" role="alert">info</div>
-            <div class="alert alert-light" role="alert">light</div>
-            <div class="alert alert-dark" role="alert">dark</div>
         </div>
-    </div>
     </div>
 </div>
     <!-- Footer-->
